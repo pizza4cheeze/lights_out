@@ -34,7 +34,7 @@ class MenuWindow(QWidget):
         self.setLayout(self.layout)
 
     def start_level(self, level):
-        file_name = f"input{level}.txt"
+        file_name = f"inputs/input{level}.txt"
         self.level_window = LevelWindow(file_name, self)  # Сохраняем ссылку на объект LevelWindow
         self.level_window.show()
         return self.level_window
